@@ -1,0 +1,49 @@
+$primary-brand-color: #0072ff;
+$important-action-color: #ff6500;
+$secondary-action-color: #808080;
+$button-text-color: white;
+
+$base-font-size: 16pt;
+$button-font-size: 30pt;
+
+$button-width: 200px;
+$button-padding: 10px 30px 10px 20px;
+
+@mixin standard-button($bg-color) {
+  color: $button-text-color;
+  font-size: $button-font-size;
+  width: $button-width;
+  padding: $button-padding;
+  background-color: $bg-color;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+body {
+  font-size: $base-font-size;
+}
+
+h1 {
+  color: $primary-brand-color;
+}
+
+.lead-text{
+  color: $primary-brand-color;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.primary-button{
+  @include standard-button($important-action-color);
+  @include border-radius(20px);
+}
+
+.secondary-button{
+  @include standard-button($secondary-action-color); 
+}
+
