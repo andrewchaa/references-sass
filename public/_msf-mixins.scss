@@ -1,0 +1,14 @@
+@mixin standard-button($bg-color) {
+  color: $button-text-color;
+  font-size: $button-font-size;
+  width: $button-width;
+  padding: $button-padding;
+  background-color: $bg-color;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}

@@ -1,0 +1,26 @@
+@import '_msf-variables.scss';
+@import '_msf-mixins.scss';
+
+body {
+  font-size: $base-font-size;
+}
+
+h1 {
+  color: $primary-brand-color;
+}
+
+.lead-text{
+  color: $primary-brand-color;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.primary-button{
+  @include standard-button($important-action-color);
+  @include border-radius(20px);
+}
+
+.secondary-button{
+  @include standard-button($secondary-action-color); 
+}
+
